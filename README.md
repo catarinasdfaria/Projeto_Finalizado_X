@@ -230,11 +230,13 @@ Abaixo estão listadas as principais rotas expostas pela API do servidor. A docu
 
 ---
 
-## 👥 Autores e Agradecimentos
+## 👥 Autores e Desenvolvedores
 
 Este projeto foi elaborado como parte da avaliação académica na Universidade.
 
-- **Desenvolvedor:** Jlcdias ([@Jlcdias](https://github.com/Jlcdias))
+- **Desenvolvedores:**
+  - Jlcdias ([@Jlcdias](https://github.com/Jlcdias))
+  - Catarina Faria ([@catarinasdfaria](https://github.com/catarinasdfaria))
 - **Agradecimentos:** Ao corpo docente da disciplina de Front-End pelo apoio e orientações fornecidas ao longo do desenvolvimento.
 
 ---

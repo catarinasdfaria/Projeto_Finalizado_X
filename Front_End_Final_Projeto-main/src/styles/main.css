@@ -1,0 +1,1289 @@
+/* Style CSS Login */
+/* Centraliza o formulário na página */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg); /* Fundo suave temático */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form {
+  background: var(--surface);
+  color: var(--text);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.login-form p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.login-logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos grupos de input */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Garante que o padding não quebre a largura */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+.main-page{
+  max-height: 60vh;
+}
+
+/* Estilo do Botão */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.login-button:hover {
+  background-color: var(--accent);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+/* Style Message */
+.chatBox{
+  height: 80%;
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.chatMessages{
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  display: block; 
+}
+
+.inputForm{
+  padding: 20px;
+  border-top: 1px solid var(--input-border);
+  display: flex;
+  gap: 10px;
+  background-color: var(--surface);
+  width: 100%;
+  box-sizing: border-box;
+}
+.inputTextBox{
+  width: 800px;
+  padding: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+}
+.submitButton {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.history-item {
+  flex-shrink: 0;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+  margin: 4px 0;
+  background-color: var(--surface);
+}
+
+
+.history-item:hover {
+  background-color: var(--accent);
+  color: var(--button-color);
+}
+
+
+.text-truncate-custom {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.history-container {
+ 
+  max-height: calc(100vh - 200px); 
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* Estilo base */
+.Main-menu {
+    transition: border-color 0.3s ease; /* Para a mudança ser suave */
+    border-left: 2px solid transparent; /* Invisível por padrão ou cor neutra */
+}
+
+/* Quando o botão "Blue button" é clicado (custom-made-theme) */
+.Main-menu.custom-made-theme {
+    border-left: 3px solid #007bff;
+}
+
+/* Quando o botão "Dark button" é clicado */
+.Main-menu.dark {
+    border-left: 3px solid #343a40;
+}
+
+/* Quando o botão "Ligth button" é clicado */
+/* Nota: Corrigi para "ligth" para bater certo com o teu erro de digitação no botão */
+.Main-menu.ligth {
+    border-left: 3px solid #e0e0e0;
+}
+
+.feed-root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  color: var(--text);
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feed-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feed-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  border-bottom: 1px solid rgba(29, 161, 242, 0.15);
+  padding-bottom: 12px;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feed-list-item {
+  list-style: none;
+}
+
+.tweet-card {
+  background: var(--bg);
+  border: 1px solid rgba(29, 161, 242, 0.16);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tweet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tweet-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.tweet-card-user {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tweet-card-meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.tweet-card-meta span {
+  color: var(--muted);
+}
+
+.tweet-message {
+  margin: 0 0 16px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.tweet-card-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.tweet-card-header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tweet-delete-button {
+  cursor: pointer;
+  border: 1px solid rgba(224, 36, 94, 0.35);
+  background: transparent;
+  color: #e0245e;
+  border-radius: 9999px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tweet-delete-button:hover {
+  background-color: rgba(224, 36, 94, 0.12);
+}
+
+.tweet-like-button,
+.tweet-follow-button {
+  cursor: pointer;
+  border: 1px solid rgba(29, 161, 242, 0.35);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.tweet-like-button:hover,
+.tweet-follow-button:hover {
+  background-color: rgba(29, 161, 242, 0.12);
+}
+
+.tweet-follow-button.follow-active {
+  background-color: rgba(29, 161, 242, 0.95);
+  color: #ffffff;
+  border-color: rgba(29, 161, 242, 0.95);
+}
+
+.tweet-like-button.liked {
+  color: #e0245e;
+  border-color: rgba(224, 36, 94, 0.35);
+}
+
+@media (max-width: 1080px) {
+  .feed-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .feed-root {
+    padding: 12px;
+  }
+
+  .tweet-card {
+    padding: 14px;
+  }
+
+  .feed-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Theme variables */
+:root {
+    --bg: #f9f9f9;
+    --surface: #ffffff;
+    --text: #333333;
+    --muted: #666666;
+    --accent: #007bff;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    --input-bg: #ffffff;
+    --input-border: #cccccc;
+    --button-bg: #007bff;
+    --button-color: #ffffff;
+    --header-bg: #ffffff;
+}
+
+.theme-dark {
+    --bg: #121212;
+    --surface: #1f1f1f;
+    --text: #f5f5f5;
+    --muted: #bbbbbb;
+    --accent: #4dabf7;
+    --card-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    --input-bg: #1b1b1b;
+    --input-border: #333333;
+    --button-bg: #4dabf7;
+    --button-color: #ffffff;
+    --header-bg: #181818;
+}
+
+.theme-ligth {
+    --bg: #f2f5fb;
+    --surface: #ffffff;
+    --text: #1e1e1e;
+    --muted: #5f6771;
+    --accent: #0d6efd;
+    --card-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    --input-bg: #ffffff;
+    --input-border: #d1d7e0;
+    --button-bg: #0d6efd;
+    --button-color: #ffffff;
+    --header-bg: #ffffff;
+}
+
+
+.app-root {
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.App {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    margin: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container {
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 160px);
+    max-height: calc(100vh - 160px);
+}
+
+.message-title {
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.chatBox {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
+.chatMessages {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    display: block;
+}
+
+.chatMessages.user {
+    align-self: flex-end;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+}
+
+.chatMessages.model {
+    align-self: flex-start;
+    background-color: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--input-border);
+}
+
+.loading-text {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.header-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-bg);
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header-button,
+.logout-button {
+    background-color: transparent;
+    border: 1px solid var(--input-border);
+    color: var(--text);
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-button:hover,
+.logout-button:hover {
+    background-color: var(--accent);
+    color: var(--button-color);
+    border-color: var(--accent);
+}
+
+.logout-button {
+    border-color: var(--text);
+}
+
+.header-icon,
+.header-logo {
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.radar-chart-container {
+    width: 100%;
+    height: 400px;
+    background: transparent;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    padding: 40px 20px 20px;
+    min-height: calc(100vh - 80px);
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.dashboard-title {
+    color: var(--accent);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats-card {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 20px;
+}
+
+.stats-title {
+    color: var(--accent);
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.stat-icon-requests,
+.stat-icon-time,
+.stat-icon-tokens {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.stat-label {
+    margin: 5px 0;
+    color: var(--text);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.activity-card {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+}
+
+.activity-title {
+    color: var(--accent);
+    text-align: center;
+}
+
+.activity-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.activity-no-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--muted);
+}
+
+.chart-card {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    margin-top: 20px;
+}
+
+.tweet-image{
+    max-width: width 250px; 
+    max-height: 250px;
+}
+
+/* Composer styles */
+.post-composer {
+  background: var(--surface);
+  border: 1px solid var(--input-border);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.post-file input[type="file"] {
+  display: none;
+}
+
+.post-file {
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-image-preview img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Tweet image */
+.tweet-image-wrap {
+  margin: 10px 0;
+}
+.tweet-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* =========================================
+   Estilos do Backoffice / Área de Admin
+   ========================================= */
+
+.admin-container {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  color: var(--text);
+}
+
+.admin-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  border-bottom: 1px solid var(--input-border);
+  padding-bottom: 12px;
+}
+
+.admin-loading,
+.admin-error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.admin-error {
+  color: #e0245e;
+}
+
+/* Estilos da Tabela */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  padding: 14px 10px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--input-border);
+}
+
+.admin-table td {
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--input-border);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover na linha para facilitar a leitura */
+.admin-table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Modo escuro: hover ajustado */
+.theme-dark .admin-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Inputs e Selects dentro da tabela (Modo de Edição) */
+.admin-table input,
+.admin-table select {
+  width: 90%;
+  padding: 8px 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: var(--input-bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-table input:focus,
+.admin-table select:focus {
+  border-color: var(--accent);
+}
+
+/* Botões da Tabela */
+.admin-table button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  margin-right: 8px;
+}
+
+.admin-table button:hover {
+  opacity: 0.85;
+}
+
+.admin-table button:active {
+  transform: scale(0.95);
+}
+
+/* Botão Editar (Azul/Accent) */
+.admin-table button:first-child {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Botão Excluir / Cancelar (Vermelho/Cinza) */
+.admin-table button:last-child {
+  background-color: transparent;
+  border: 1px solid rgba(224, 36, 94, 0.5);
+  color: #e0245e;
+}
+
+/* Se for o botão Cancelar no modo de edição, muda para cinza */
+.admin-table button:last-child:contains('Cancelar') {
+  border: 1px solid var(--input-border);
+  color: var(--muted);
+}
+
+
+/* =========================================
+   Estilos Específicos - Backoffice de Tweets
+   ========================================= */
+
+/* Caixa de Erro */
+.admin-error-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(224, 36, 94, 0.1);
+  color: #e0245e;
+  border-radius: 8px;
+}
+
+/* Largura das Colunas da Tabela */
+.admin-table .col-id { width: 5%; }
+.admin-table .col-author { width: 15%; }
+.admin-table .col-message { width: 45%; }
+.admin-table .col-date { width: 15%; }
+.admin-table .col-likes { width: 5%; }
+.admin-table .col-actions { width: 15%; }
+
+/* Formatação do Texto do Tweet */
+.tweet-author {
+  font-weight: 600;
+}
+
+.tweet-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.tweet-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Área de Edição (Textarea) */
+.admin-textarea {
+  width: 95%;
+  min-height: 60px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background-color: var(--input-bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.char-counter {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.char-counter.limit-reached {
+  color: red;
+}
+
+/* Coluna de Botões de Ação */
+.action-buttons-column {
+  vertical-align: middle;
+}
+
+/* Colocamos os botões um por baixo do outro usando display: block */
+.action-buttons-column button {
+  display: block; 
+  margin-bottom: 10px !important; /* Cria o espaço entre os botões */
+}
+
+/* Removemos o espaço extra debaixo do último botão (Excluir/Cancelar) */
+.action-buttons-column button:last-child {
+  margin-bottom: 0 !important; 
+}
+
+/* Remove a borda preta grossa padrão do navegador ao clicar no botão */
+.admin-table button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.4) !important; /* Adiciona um brilho azul muito mais bonito e suave */
+}
+
+/* Botões Personalizados */
+.btn-save {
+  background-color: green !important;
+  color: white !important;
+  width: 100%;
+}
+
+.btn-cancel {
+  width: 100%;
+}
+
+.btn-edit {
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.btn-delete {
+  color: #e0245e !important;
+  border: 1px solid rgba(224, 36, 94, 0.35) !important;
+  background-color: transparent !important;
+}
+
+/* =========================================
+   Página Inicial (Landing Page)
+   ========================================= */
+
+.x-landing-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.x-landing-hero {
+  background-color: var(--surface);
+  padding: 60px 40px;
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--input-border);
+}
+
+.x-landing-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--text);
+  letter-spacing: -1px;
+}
+
+.x-landing-subtitle {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.x-landing-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap; /* Garante que os botões não se esmagam em ecrãs pequenos */
+}
+
+/* Estilo comum a ambos os botões */
+.x-btn-login,
+.x-btn-register {
+  padding: 14px 32px;
+  border-radius: 9999px; /* Cria aquele formato perfeitamente redondo nas pontas */
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 160px;
+}
+
+/* Botão Principal (Login) */
+.x-btn-login {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+}
+
+.x-btn-login:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+}
+
+/* Botão Secundário (Registar) */
+.x-btn-register {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.x-btn-register:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Efeito ao clicar */
+.x-btn-login:active,
+.x-btn-register:active {
+  transform: scale(0.97);
+}
+
+/* Responsividade para telemóveis */
+@media (max-width: 480px) {
+  .x-landing-title {
+    font-size: 2.2rem;
+  }
+  
+  .x-landing-actions {
+    flex-direction: column;
+  }
+  
+  .x-btn-login,
+  .x-btn-register {
+    width: 100%;
+  }
+}
+/* =========================================
+   Estilos Específicos - Backoffice (Ajustado)
+   ========================================= */
+
+/* 1. Alargar o contentor para a tabela respirar */
+.admin-container {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1200px; /* Aumentado de 1000px para 1200px */
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  color: var(--text);
+  overflow-x: auto; /* Adiciona scroll se o ecrã for muito pequeno */
+}
+
+/* 2. Ajuste das Colunas */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  padding: 16px 12px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--input-border);
+}
+
+.admin-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--input-border);
+  vertical-align: middle;
+}
+
+.admin-table .col-id { width: 5%; }
+.admin-table .col-author { width: 15%; }
+.admin-table .col-message { width: auto; } /* Usa o espaço que sobrar */
+.admin-table .col-date { width: 120px; }
+.admin-table .col-likes { width: 5%; text-align: center; }
+.admin-table .col-actions { width: 140px; } /* Espaço fixo para os botões */
+
+/* 3. Formatação do Texto e Imagem */
+.tweet-author { font-weight: 600; }
+.tweet-text { white-space: pre-wrap; word-break: break-word; }
+.tweet-date { font-size: 0.85rem; color: var(--muted); }
+
+.admin-tweet-img-wrapper { margin-top: 12px; }
+.admin-tweet-thumbnail {
+  max-height: 90px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  object-fit: cover;
+}
+
+
+
+/* Forçamos o estilo com !important para evitar conflitos com botões antigos */
+.admin-table button {
+  width: 100% !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  margin: 0 !important;
+}
+
+.btn-edit {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--accent) !important;
+}
+.btn-edit:hover { opacity: 0.85 !important; }
+
+.btn-delete {
+  background-color: transparent !important;
+  color: #e0245e !important;
+  border: 1px solid rgba(224, 36, 94, 0.5) !important;
+}
+.btn-delete:hover { background-color: rgba(224, 36, 94, 0.1) !important; }
+
+.btn-save {
+  background-color: #17bf63 !important; /* Verde Twitter */
+  color: white !important;
+  border: 1px solid #17bf63 !important;
+}
+
+.btn-cancel {
+  background-color: transparent !important;
+  color: var(--muted) !important;
+  border: 1px solid var(--input-border) !important;
+}
+
+/* Caixa de Erro */
+.admin-error-box {
+  margin-bottom: 20px;
+  padding: 14px;
+  background: rgba(224, 36, 94, 0.1);
+  color: #e0245e;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+/* =========================================
+   Menu Secundário (Barra Horizontal / LeftMenu)
+   ========================================= */
+
+.sub-header-bar {
+  border-bottom: 1px solid var(--input-border);
+  background-color: var(--surface);
+}
+
+.sub-header-title {
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Ajustes específicos para os botões dentro desta sub-barra */
+.sub-header-nav-btn {
+  padding: 6px 16px !important;
+  gap: 8px;
+  margin: 0 !important;
+}
+
+.sub-header-icon {
+  height: 20px;
+}
+
+.sub-header-logout {
+  padding: 6px 20px !important;
+  margin: 0 !important;
+}
+
+/* =========================================
+   Estilos de Comentários (Tweet Comments)
+   ========================================= */
+.tweet-comments-section {
+  border-top: 1px solid var(--input-border);
+  margin-top: 12px;
+  padding-top: 12px;
+  text-align: left;
+}
+
+.comments-list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  padding-right: 4px;
+}
+
+.comment-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.theme-dark .comment-item {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--text);
+}
+
+.comment-date {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.comment-text {
+  color: var(--text);
+  word-break: break-all;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.comment-submit-btn {
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.comment-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tweet-comment-button {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.tweet-comment-button:hover {
+  background: rgba(29, 161, 242, 0.1);
+  color: var(--accent);
+}

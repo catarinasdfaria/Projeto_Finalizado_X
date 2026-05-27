@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "message": "Sabão batatas e arroz",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLrq4s4xwmnVwnLBDcBPH7CZY4SSto1DoDA&s",
+    "user": "joao",
+    "date": "2022-01-01",
+    "likes": 5,
+    "follow": true
+  },
+  {
+    "id": 2,
+    "message": "Sabão feijao e arroz",
+    "img":"https://static.boredpanda.com/blog/wp-content/uploads/2025/03/67c700849a6c7_funny-random-rare-pictures.jpg",
+    "user": "tiago",
+    "date": "2022-03-01",
+    "likes": 5,
+    "follow": true
+  },
+  {
+    "id": 3,
+    "message": "feijão batatas e arroz",
+    "img":"https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_1280.jpg",
+    "user": "jose",
+    "date": "2022-01-14",
+    "likes": 5,
+    "follow": true
+  },
+  {
+    "id": 4,
+    "message": "pescada e arroz",
+    "img":"https://static.boredpanda.com/blog/wp-content/uploads/2025/03/67c700849a6c7_funny-random-rare-pictures.jpg",
+    "user": "ana",
+    "date": "2022-01-01",
+    "likes": 5,
+    "follow": true
+  },
+  {
+    "id": 5,
+    "message": "bolhao de pato batatas e arroz",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLrq4s4xwmnVwnLBDcBPH7CZY4SSto1DoDA&s",
+    "user": "joao",
+    "date": "2022-07-01",
+    "likes": 5,
+    "follow": true
+  }
+]

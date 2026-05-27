@@ -175,14 +175,26 @@ Front_End_Final_Projeto-main/
 
 ---
 
-## 🔐 Controlo de Acesso e Utilizador de Teste
+## 🔐 Controlo de Acesso e Utilizadores de Teste
 
-Para testar todas as funcionalidades do projeto, incluindo o painel de administração (Dashboard), pode criar uma conta ou utilizar os seguintes perfis configurados por omissão:
+Para testar todas as funcionalidades do projeto, incluindo o painel de administração (Dashboard), pode utilizar as seguintes contas de teste configuradas na base de dados:
 
-| Perfil | Username | Palavra-passe | Permissões |
-|---|---|---|---|
-| **Administrador** | admin | `admin123` (ou a palavra-passe definida no registo) | Acesso total ao Feed e ao Painel de Administração |
-| **Utilizador Comum** | user | `user123` | Acesso padrão ao Feed, publicação, likes e comentários |
+### 👑 Administrador
+- **E-mail:** `admin@gmail.com`
+- **Palavra-passe:** `admin123`
+- *Permissões:* Acesso total ao Feed e ao Painel de Administração (Backoffice).
+
+### 👥 Utilizadores Comuns
+
+- **Utilizador 1:**
+  - **E-mail:** `joana@gmail.com`
+  - **Palavra-passe:** `joana123`
+
+- **Utilizador 2:**
+  - **E-mail:** `joao@gmail.com`
+  - **Palavra-passe:** `joao123`
+
+> 📝 **Nota:** Se desejar, também poderá registar um novo utilizador diretamente na aplicação através do formulário de registo.
 
 ---
 
